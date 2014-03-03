@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:stretchColumns="1"
+			android:background="@drawable/jossh_background">
+		<TextView android:background="@drawable/pilotdetailtextviewblack"></TextView>
+		<TableRow>
+			<TextView
+					android:text="Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="Status"
+					android:id="@+id/txtPilotDetailOnlineStatus"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Rank"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="Rank"
+					android:id="@+id/txtPilotDetailRank"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Squad"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="Squad"
+					android:id="@+id/txtPilotDetailSquad"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Registry"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="Registry"
+					android:id="@+id/txtPilotDetailRegistry"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		<!--        <LinearLayout
+							android:orientation="horizontal">
+							<ImageView
+									android:src="@drawable/registry_icon"
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+									android:id="@+id/imgPilotDetailRegistry" />
+							<TextView
+									android:text="Registry"
+									android:layout_width="wrap_content"
+									android:layout_height="match_parent"
+								android:id="@+id/txtPilotDetailRegistry"
+								android:gravity="center"
+								android:padding="3dip"
+								android:background="@drawable/pilotdetailtextviewblack" />
+					</LinearLayout>-->
+		</TableRow>
+		<TextView
+				android:text="Combat Categories"
+				android:padding="5dip"
+				android:background="@drawable/pilotdetailtextviewdarkgray"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:textSize="18dp" />
+		<TableRow>
+			<TextView
+					android:text="Solrain Kills"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailSolKills"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Solrain Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailSolRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Octavius Kills"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailOctKills"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Octavius Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailOctRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Quantar Kills"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailQuantKills"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Quantar Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailQuantRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Amananth Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailAmanRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Hyperial Status"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailHypRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Total Pilot Kills"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailTotalPilotKills"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Bounty Collected"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailBountyCollected"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Bounty per Kill"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailBountyPerKill"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Deaths"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailDeaths"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Kill Ratio"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailKillRatio"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<View
+				android:layout_height="8dip"
+				android:background="#1B2326" />
+		<TableRow>
+			<TextView
+					android:text="Conflux Kills"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailConfluxKills"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<View
+				android:layout_height="8dip"
+				android:background="#1B2326" />
+		<TableRow>
+			<TextView
+					android:text="Gunshots Fired"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailGunshotsFired"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Gunshots Hit"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailGunshotsHit"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Gun Accuracy"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailGunAccuracy"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Missiles Fired"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailMissilesFired"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Missiles Hit"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailMissilesHit"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Missile Accuracy"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailMissileAccuracy"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TextView
+				android:text="Non-Combat Categories"
+				android:padding="5dip"
+				android:background="@drawable/pilotdetailtextviewdarkgray"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:textSize="18dp" />
+		<TableRow>
+			<TextView
+					android:text="Experience"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailExperience"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Credits"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailCredits"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<View
+				android:layout_height="8dip"
+				android:background="#1B2326" />
+		<TableRow>
+			<TextView
+					android:text="Launches"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailLaunches"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Landings"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailLandings"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Disconnects"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailDisconnects"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Duty Hours"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailDutyHours"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<View
+				android:layout_height="8dip"
+				android:background="#1B2326" />
+		<TableRow>
+			<TextView
+					android:text="Missions Taken"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailMissionsTaken"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Missions Completed"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailMissionsCompleted"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+		<TableRow>
+			<TextView
+					android:text="Insurance Rating"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+			<TextView
+					android:text="0"
+					android:id="@+id/txtPilotDetailInsuranceRating"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+		</TableRow>
+	</TableLayout>
+</ScrollView>

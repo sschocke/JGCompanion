@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<level-list
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:drawable="@drawable/octavius"
+		android:maxLevel="1"
+		android:minLevel="1" />
+	<item
+		android:drawable="@drawable/solrain"
+		android:maxLevel="2"
+		android:minLevel="2" />
+	<item
+		android:drawable="@drawable/quantar"
+		android:maxLevel="3"
+		android:minLevel="3" />
+	<item
+		android:drawable="@drawable/amananth"
+		android:maxLevel="4"
+		android:minLevel="4" />
+	<item
+		android:drawable="@drawable/hyperial"
+		android:maxLevel="5"
+		android:minLevel="5" />
+</level-list>

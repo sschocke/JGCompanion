@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{758FBF28-0D05-43D1-9F1E-C660723A5BFB}</ProjectGuid>
+    <ProjectTypeGuids>{337B7DB7-2D1E-448D-BEBF-17E887A46E37};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JGCompanion</RootNamespace>
+    <AssemblyName>JGCompanion</AssemblyName>
+    <TargetFrameworkIdentifier>Android</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidVersion>$(TargetFrameworkVersion)</AndroidVersion>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApkOutputs>true</ApkOutputs>
+    <GenerateAndroidManifest>true</GenerateAndroidManifest>
+    <ApkFilename>JGCompanion.apk</ApkFilename>
+    <PackageName>com.JGCompanion</PackageName>
+    <Dot42ExtensionsPath Condition=" '$(Dot42ExtensionsPath)' == '' ">$(Registry:HKEY_CURRENT_USER\SOFTWARE\dot42\Android@ExtensionsPath)</Dot42ExtensionsPath>
+    <Dot42ExtensionsPath Condition=" '$(Dot42ExtensionsPath)' == '' ">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\dot42\Android@ExtensionsPath)</Dot42ExtensionsPath>
+    <ApkCertificatePath>C:\Users\Hunter Seeker\Documents\Dropbox\dot42\Sebastian Schocke.pfx</ApkCertificatePath>
+    <ApkCertificateThumbprint>D789D607BAC53F796922CAFB99D6ADE15496F2E8</ApkCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;DOT42</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;DOT42</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dot42" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adapters\ItemComponentsAdapter.cs" />
+    <Compile Include="adapters\ItemProducerComponentsAdapter.cs" />
+    <Compile Include="adapters\ItemProducersAdapter.cs" />
+    <Compile Include="adapters\ItemStationStockAdapter.cs" />
+    <Compile Include="adapters\ItemStocksAdapter.cs" />
+    <Compile Include="adapters\PilotListAdapter.cs" />
+    <Compile Include="adapters\PilotStatsAdapter.cs" />
+    <Compile Include="adapters\StationInventoryAdapter.cs" />
+    <Compile Include="fragments\ItemDetailsTabFragment.cs" />
+    <Compile Include="fragments\ItemProducersTabFragment.cs" />
+    <Compile Include="fragments\ItemStationStockTabFragment.cs" />
+    <Compile Include="fragments\MyPreferencesFragment.cs" />
+    <Compile Include="fragments\PilotListCounterFragment.cs" />
+    <Compile Include="fragments\PilotStatsListFragment.cs" />
+    <Compile Include="fragments\StationInventoryListFragment.cs" />
+    <Compile Include="ItemDetailActivity.cs" />
+    <Compile Include="ItemStocksActivity.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="models\Commodity.cs" />
+    <Compile Include="models\Component.cs" />
+    <Compile Include="models\Capacitor.cs" />
+    <Compile Include="models\Missile.cs" />
+    <Compile Include="models\Gun.cs" />
+    <Compile Include="models\MODx.cs" />
+    <Compile Include="models\Radar.cs" />
+    <Compile Include="models\PowerPlant.cs" />
+    <Compile Include="models\Engine.cs" />
+    <Compile Include="models\Shield.cs" />
+    <Compile Include="models\ECM.cs" />
+    <Compile Include="models\Equipment.cs" />
+    <Compile Include="models\Item.cs" />
+    <Compile Include="models\ItemProducer.cs" />
+    <Compile Include="models\ItemStationStock.cs" />
+    <Compile Include="models\ItemStocks.cs" />
+    <Compile Include="models\Pilot.cs" />
+    <Compile Include="models\PilotDetail.cs" />
+    <Compile Include="models\PilotList.cs" />
+    <Compile Include="models\PilotStats.cs" />
+    <Compile Include="models\StationInventories.cs" />
+    <Compile Include="MyPreferencesActivity.cs" />
+    <Compile Include="OnlinePilotsActivity.cs" />
+    <Compile Include="PilotDetailActivity.cs" />
+    <Compile Include="StationInventoryActivity.cs" />
+    <Compile Include="TopPilotsActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\MainLayout.xml" />
+  </ItemGroup>
+  <Import Project="$(Dot42ExtensionsPath)\Dot42.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="$(ResourcesGeneratedCodePath)R.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="drawable\jossh_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\TopPilotsActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XmlResource Include="xml\preferences.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MenuResource Include="xml\MainActivityMenu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\PilotDetailActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="drawable\PilotDetailTextViewBlack.xml" />
+    <DrawableResource Include="drawable\PilotDetailTextViewDarkGray.xml" />
+    <DrawableResource Include="drawable\PilotDetailTextViewGray.xml" />
+    <DrawableResource Include="drawable\PilotDetailTextViewInFlight.xml" />
+    <DrawableResource Include="drawable\PilotDetailTextViewOnline.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\OctaviusIcon.png" />
+    <DrawableResource Include="gfx\QuantarIcon.png" />
+    <DrawableResource Include="gfx\SolrainIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\PilotStatsAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="drawable\faction_icon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\amananth.png" />
+    <DrawableResource Include="gfx\hyperial.png" />
+    <DrawableResource Include="gfx\octavius.png" />
+    <DrawableResource Include="gfx\quantar.png" />
+    <DrawableResource Include="gfx\solrain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\PilotsStatsListFragment.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\OnlinePilotsActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\PilotListCounterFragment.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\PilotListAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\StationInventoryActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\tri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\StationInventoryListFragment.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\StationInventoryAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemStocksActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemStocksAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailActivity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Blank.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Commodity.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemComponentsAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemComponentsAdapter.NoQty.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemStationStockTabFragment.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemStationStockAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemProducersTabFragment.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemProducersAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemProducerComponentsAdapter.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.ECM.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Shield.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Capacitor.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Engine.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.PowerPlant.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Radar.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.MODx.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Gun.Layout.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <LayoutResource Include="layouts\ItemDetailsTabFragment.Missile.Layout.xml" />
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

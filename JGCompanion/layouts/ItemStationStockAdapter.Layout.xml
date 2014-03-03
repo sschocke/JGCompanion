@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/itemStationName"
+      android:text="Item Name"
+      android:paddingRight="10dip"
+      android:layout_weight="10"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/itemStationQty"
+      android:text="0"
+      android:gravity="center"
+      android:layout_weight="3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/itemStationPrice"
+      android:text="0c"
+      android:gravity="end"
+      android:layout_weight="5"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+</LinearLayout>

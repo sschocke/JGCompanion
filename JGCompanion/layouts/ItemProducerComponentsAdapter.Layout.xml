@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/itemProducerComponentName"
+      android:text="Item Name"
+      android:textColor="#FFF"
+      android:paddingRight="10dip"
+      android:layout_weight="10"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/itemProducerComponentQty"
+      android:text="0"
+      android:textColor="#FFF"
+      android:gravity="right"
+      android:layout_weight="3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+</LinearLayout>

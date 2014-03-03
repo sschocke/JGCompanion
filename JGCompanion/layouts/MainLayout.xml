@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@drawable/jossh_background">
+    <Button
+        android:text="Pilot Stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMyPilotStats"
+        android:background="#ff003333"
+        android:layout_margin="3dp" />
+    <Button
+        android:text="Top Pilots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPilotStats"
+        android:background="#ff003333"
+        android:layout_margin="3dp" />
+    <Button
+        android:text="Online Pilots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOnlinePilots"
+        android:background="#ff003333"
+        android:layout_margin="3dp" />
+    <Button
+        android:text="Station Inventories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStationInventories"
+        android:background="#ff003333"
+        android:layout_margin="3dp" />
+    <Button
+        android:text="Item Stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnItemStocks"
+        android:background="#ff003333"
+        android:layout_margin="3dp" />
+</LinearLayout>

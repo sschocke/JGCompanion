@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/jossh_background">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+      <TextView
+          android:text="Description"
+          android:id="@+id/txtItemDetailDescription"
+          android:padding="5dip"
+          android:background="@drawable/pilotdetailtextviewdarkgray" />
+      <View
+          android:layout_height="12dip" />
+      <TableRow>
+        <TextView
+            android:text="Classification"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="Classification"
+            android:id="@+id/txtItemDetailClassification"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:text="Manufacturer"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="Manufacturer"
+            android:id="@+id/txtItemDetailManufacturer"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:text="TechLevel"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="TechLevel"
+            android:id="@+id/txtItemDetailTechLevel"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:text="Size(ucs)"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="0"
+            android:id="@+id/txtItemDetailSize"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:text="Mass(kg)"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="0"
+            android:id="@+id/txtItemDetailMass"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+      <TableRow>
+        <TextView
+            android:text="Energy Output(W)"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewgray" />
+        <TextView
+            android:text="0"
+            android:id="@+id/txtItemDetailOutput"
+            android:gravity="center"
+            android:padding="3dip"
+            android:background="@drawable/pilotdetailtextviewblack" />
+      </TableRow>
+    </TableLayout>
+    <TextView
+        android:text="Required Components"
+        android:padding="3dip"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/headingItemDetailComponents"
+        android:background="@drawable/pilotdetailtextviewgray"
+        android:textStyle="bold" />
+    <ListView
+        android:id="@+id/listItemDetailComponents"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:padding="3dip"
+        android:background="@drawable/pilotdetailtextviewblack" />
+  </LinearLayout>
+</ScrollView>

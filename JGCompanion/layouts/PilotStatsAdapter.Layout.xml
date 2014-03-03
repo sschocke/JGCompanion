@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="2dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+  <TextView
+      android:id="@+id/pilotStatName"
+      android:text="Pilot Name"
+      android:paddingRight="10dip"
+      android:layout_weight="10"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+  <ImageView
+      android:id="@+id/pilotStatFaction"
+      android:src="@drawable/faction_icon"
+      android:scaleType="centerCrop"
+      android:layout_weight="1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/pilotStatValue"
+      android:text="-1"
+      android:gravity="end"
+      android:layout_weight="4"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content" />
+</LinearLayout>
