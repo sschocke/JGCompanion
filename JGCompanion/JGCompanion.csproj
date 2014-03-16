@@ -60,6 +60,7 @@
     <Compile Include="adapters\PilotListAdapter.cs" />
     <Compile Include="adapters\PilotStatsAdapter.cs" />
     <Compile Include="adapters\StationInventoryAdapter.cs" />
+    <Compile Include="dialogs\AutoUpdateDialog.cs" />
     <Compile Include="fragments\ItemDetailsTabFragment.cs" />
     <Compile Include="fragments\ItemProducersTabFragment.cs" />
     <Compile Include="fragments\ItemStationStockTabFragment.cs" />

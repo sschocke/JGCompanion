@@ -7,11 +7,15 @@ using Dot42.Manifest;
 using Android.Content;
 using Android.Preference;
 using Android.View;
+using System.ComponentModel;
+using System.Net;
+using Android.Content.Pm;
 
 [assembly: Application("JGCompanion", Icon="drawable/Icon", Label="Jumpgate Companion")]
 [assembly: UsesPermission(Android.Manifest.Permission.INTERNET)]
 [assembly: UsesPermission(Android.Manifest.Permission.ACCESS_NETWORK_STATE)]
-[assembly: Package(VersionName="2.0.1", VersionCode=11)]
+[assembly: UsesPermission(Android.Manifest.Permission.WRITE_EXTERNAL_STORAGE)]
+[assembly: Package(VersionName = "2.1.0", VersionCode = 12)]
 
 namespace JGCompanion
 {
@@ -71,6 +75,8 @@ namespace JGCompanion
                 pilotDetails.PutExtra("pilotName", curPilotName);
                 StartActivity(pilotDetails);
             };
+
+            CheckForUpdate();
         }
 
         public void OnSharedPreferenceChanged(ISharedPreferences sharedPreferences, string key)
@@ -100,6 +106,10 @@ namespace JGCompanion
             alert.SetIcon(Android.R.Drawable.Ic_dialog_alert);
             alert.SetButton("OK", main);
             alert.Show();
+        }
+        public static void StartActivityOnMain(Intent i)
+        {
+            main.StartActivity(i);
         }
 
         public static void setListViewHeightBasedOnChildren(ListView listView)
@@ -151,6 +161,32 @@ namespace JGCompanion
         public void OnClick(IDialogInterface dialog, int which)
         {
             dialog.Dismiss();
+        }
+
+        void CheckForUpdate()
+        {
+            string pilotProfileURL = String.Format("{0}/version.txt", MainActivity.BASE_URL);
+
+            var worker = new BackgroundWorker();
+            worker.DoWork += OnCheckForUpdate;
+            worker.RunWorkerAsync(pilotProfileURL);
+        }
+        private void OnCheckForUpdate(object sender, DoWorkEventArgs args)
+        {
+            var webClient = new WebClient();
+            var data = webClient.DownloadString(args.Argument.ToString());
+
+            Int32 serverVersion = Int32.Parse(data);
+            PackageInfo pinfo = GetPackageManager().GetPackageInfo(GetPackageName(), 0);
+            int clientVersion = pinfo.VersionCode;
+
+            if (serverVersion > clientVersion)
+            {
+                RunOnUiThread(() =>
+                {
+                    new AutoUpdateDialog().Show(this.FragmentManager, "autoUpdate");
+                });
+            }
         }
     }
 }
