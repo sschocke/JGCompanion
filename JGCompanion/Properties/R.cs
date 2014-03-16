@@ -235,101 +235,105 @@ namespace JGCompanion
             
             public const int txtPilotDetailOnlineStatus = 0x7f05006a;
             
-            public const int txtPilotDetailRank = 0x7f05006b;
+            public const int txtPilotDetailLastOnline = 0x7f05006b;
             
-            public const int txtPilotDetailSquad = 0x7f05006c;
+            public const int txtPilotDetailRank = 0x7f05006c;
             
-            public const int txtPilotDetailRegistry = 0x7f05006d;
+            public const int txtPilotDetailSquad = 0x7f05006d;
             
-            public const int txtPilotDetailSolKills = 0x7f05006e;
+            public const int txtPilotDetailRegistry = 0x7f05006e;
             
-            public const int txtPilotDetailSolRating = 0x7f05006f;
+            public const int txtPilotDetailExpToNextLevel = 0x7f05006f;
             
-            public const int txtPilotDetailOctKills = 0x7f050070;
+            public const int txtPilotDetailSolKills = 0x7f050070;
             
-            public const int txtPilotDetailOctRating = 0x7f050071;
+            public const int txtPilotDetailSolRating = 0x7f050071;
             
-            public const int txtPilotDetailQuantKills = 0x7f050072;
+            public const int txtPilotDetailOctKills = 0x7f050072;
             
-            public const int txtPilotDetailQuantRating = 0x7f050073;
+            public const int txtPilotDetailOctRating = 0x7f050073;
             
-            public const int txtPilotDetailAmanRating = 0x7f050074;
+            public const int txtPilotDetailQuantKills = 0x7f050074;
             
-            public const int txtPilotDetailHypRating = 0x7f050075;
+            public const int txtPilotDetailQuantRating = 0x7f050075;
             
-            public const int txtPilotDetailTotalPilotKills = 0x7f050076;
+            public const int txtPilotDetailAmanRating = 0x7f050076;
             
-            public const int txtPilotDetailBountyCollected = 0x7f050077;
+            public const int txtPilotDetailHypRating = 0x7f050077;
             
-            public const int txtPilotDetailBountyPerKill = 0x7f050078;
+            public const int txtPilotDetailTotalPilotKills = 0x7f050078;
             
-            public const int txtPilotDetailDeaths = 0x7f050079;
+            public const int txtPilotDetailBountyCollected = 0x7f050079;
             
-            public const int txtPilotDetailKillRatio = 0x7f05007a;
+            public const int txtPilotDetailBountyPerKill = 0x7f05007a;
             
-            public const int txtPilotDetailConfluxKills = 0x7f05007b;
+            public const int txtPilotDetailDeaths = 0x7f05007b;
             
-            public const int txtPilotDetailGunshotsFired = 0x7f05007c;
+            public const int txtPilotDetailKillRatio = 0x7f05007c;
             
-            public const int txtPilotDetailGunshotsHit = 0x7f05007d;
+            public const int txtPilotDetailConfluxKills = 0x7f05007d;
             
-            public const int txtPilotDetailGunAccuracy = 0x7f05007e;
+            public const int txtPilotDetailGunshotsFired = 0x7f05007e;
             
-            public const int txtPilotDetailMissilesFired = 0x7f05007f;
+            public const int txtPilotDetailGunshotsHit = 0x7f05007f;
             
-            public const int txtPilotDetailMissilesHit = 0x7f050080;
+            public const int txtPilotDetailGunAccuracy = 0x7f050080;
             
-            public const int txtPilotDetailMissileAccuracy = 0x7f050081;
+            public const int txtPilotDetailMissilesFired = 0x7f050081;
             
-            public const int txtPilotDetailExperience = 0x7f050082;
+            public const int txtPilotDetailMissilesHit = 0x7f050082;
             
-            public const int txtPilotDetailCredits = 0x7f050083;
+            public const int txtPilotDetailMissileAccuracy = 0x7f050083;
             
-            public const int txtPilotDetailLaunches = 0x7f050084;
+            public const int txtPilotDetailExperience = 0x7f050084;
             
-            public const int txtPilotDetailLandings = 0x7f050085;
+            public const int txtPilotDetailCredits = 0x7f050085;
             
-            public const int txtPilotDetailDisconnects = 0x7f050086;
+            public const int txtPilotDetailLaunches = 0x7f050086;
             
-            public const int txtPilotDetailDutyHours = 0x7f050087;
+            public const int txtPilotDetailLandings = 0x7f050087;
             
-            public const int txtPilotDetailMissionsTaken = 0x7f050088;
+            public const int txtPilotDetailDisconnects = 0x7f050088;
             
-            public const int txtPilotDetailMissionsCompleted = 0x7f050089;
+            public const int txtPilotDetailDutyHours = 0x7f050089;
             
-            public const int txtPilotDetailInsuranceRating = 0x7f05008a;
+            public const int txtPilotDetailMissionsTaken = 0x7f05008a;
             
-            public const int pilotName = 0x7f05008b;
+            public const int txtPilotDetailMissionsCompleted = 0x7f05008b;
             
-            public const int pilotFaction = 0x7f05008c;
+            public const int txtPilotDetailInsuranceRating = 0x7f05008c;
             
-            public const int pilotListCounterTitle = 0x7f05008d;
+            public const int pilotName = 0x7f05008d;
             
-            public const int pilotListCounterView = 0x7f05008e;
+            public const int pilotFaction = 0x7f05008e;
             
-            public const int pilotStatsTextTitle = 0x7f05008f;
+            public const int pilotListCounterTitle = 0x7f05008f;
             
-            public const int pilotStatsListView = 0x7f050090;
+            public const int pilotListCounterView = 0x7f050090;
             
-            public const int pilotStatName = 0x7f050091;
+            public const int pilotStatsTextTitle = 0x7f050091;
             
-            public const int pilotStatFaction = 0x7f050092;
+            public const int pilotStatsListView = 0x7f050092;
             
-            public const int pilotStatValue = 0x7f050093;
+            public const int pilotStatName = 0x7f050093;
             
-            public const int stationInventoryFragmentContainer = 0x7f050094;
+            public const int pilotStatFaction = 0x7f050094;
             
-            public const int inventoryItemName = 0x7f050095;
+            public const int pilotStatValue = 0x7f050095;
             
-            public const int inventoryItemQty = 0x7f050096;
+            public const int stationInventoryFragmentContainer = 0x7f050096;
             
-            public const int inventoryItemPrice = 0x7f050097;
+            public const int inventoryItemName = 0x7f050097;
             
-            public const int stationInventoryListView = 0x7f050098;
+            public const int inventoryItemQty = 0x7f050098;
             
-            public const int pilotStatsFragmentContainer = 0x7f050099;
+            public const int inventoryItemPrice = 0x7f050099;
             
-            public const int settingMenuItem = 0x7f05009a;
+            public const int stationInventoryListView = 0x7f05009a;
+            
+            public const int pilotStatsFragmentContainer = 0x7f05009b;
+            
+            public const int settingMenuItem = 0x7f05009c;
         }
         
         public sealed class Menus

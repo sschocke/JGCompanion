@@ -46,6 +46,7 @@ namespace JGCompanion
         public Int32 ShotsHit { get; set; }
         public Int32 MissionsFlown { get; set; }
         public Int32 MissionsCompleted { get; set; }
+        public DateTime LastOnline { get; set; }
 
         public PilotDetail(XElement xml)
             : base()
@@ -81,6 +82,9 @@ namespace JGCompanion
             this.ShotsHit = Int32.Parse(xml.Element("shots_hit").Value);
             this.MissionsFlown = Int32.Parse(xml.Element("missions_flown").Value);
             this.MissionsCompleted = Int32.Parse(xml.Element("missions_completed").Value);
+            this.LastOnline = new DateTime(Int64.Parse(xml.Element("last_online").Value) * TimeSpan.TicksPerSecond);
+            this.LastOnline = this.LastOnline.AddYears(1969);
+            //DateTime temp = new DateTime(2014, 03, 14, 16, 30, 00, 0, DateTimeKind.Utc);
         }
 
         public Int32 TotalPilotKills
@@ -151,6 +155,75 @@ namespace JGCompanion
 
                 return (double)MissionsCompleted / (double)MissionsFlown * 100.0;
             }
+        }
+        public Int64 ExperienceNextRank
+        {
+            get 
+            {
+                if (Rank == 50) return 0;
+
+                long totalExpNextRank = rankRequirement[this.Rank + 1];
+
+                return totalExpNextRank - this.Experience;
+            }
+        }
+
+        private static Dictionary<Int32, Int64> rankRequirement;
+
+        static PilotDetail()
+        {
+            rankRequirement = new Dictionary<Int32, Int64>();
+            rankRequirement.Add(0, 0);
+            rankRequirement.Add(1, 2000);
+            rankRequirement.Add(2, 4000);
+            rankRequirement.Add(3, 8800);
+            rankRequirement.Add(4, 15700);
+            rankRequirement.Add(5, 25000);
+            rankRequirement.Add(6, 37000);
+            rankRequirement.Add(7, 51600);
+            rankRequirement.Add(8, 69000);
+            rankRequirement.Add(9, 89300);
+            rankRequirement.Add(10, 112600);
+            rankRequirement.Add(11, 140000);
+            rankRequirement.Add(12, 169000);
+            rankRequirement.Add(13, 202000);
+            rankRequirement.Add(14, 240000);
+            rankRequirement.Add(15, 280000);
+            rankRequirement.Add(16, 325000);
+            rankRequirement.Add(17, 372000);
+            rankRequirement.Add(18, 424000);
+            rankRequirement.Add(19, 480000);
+            rankRequirement.Add(20, 540000);
+            rankRequirement.Add(21, 605000);
+            rankRequirement.Add(22, 675000);
+            rankRequirement.Add(23, 750000);
+            rankRequirement.Add(24, 828000);
+            rankRequirement.Add(25, 911000);
+            rankRequirement.Add(26, 1000000);
+            rankRequirement.Add(27, 1100000);
+            rankRequirement.Add(28, 1200000);
+            rankRequirement.Add(29, 1300000);
+            rankRequirement.Add(30, 1407000);
+            rankRequirement.Add(31, 1520000);
+            rankRequirement.Add(32, 1640000);
+            rankRequirement.Add(33, 1770000);
+            rankRequirement.Add(34, 1910000);
+            rankRequirement.Add(35, 2065000);
+            rankRequirement.Add(36, 2230000);
+            rankRequirement.Add(37, 2400000);
+            rankRequirement.Add(38, 2650000);
+            rankRequirement.Add(39, 3000000);
+            rankRequirement.Add(40, 3300000);
+            rankRequirement.Add(41, 3700000);
+            rankRequirement.Add(42, 4200000);
+            rankRequirement.Add(43, 4700000);
+            rankRequirement.Add(44, 5300000);
+            rankRequirement.Add(45, 5900000);
+            rankRequirement.Add(46, 6500000);
+            rankRequirement.Add(47, 7500000);
+            rankRequirement.Add(48, 8500000);
+            rankRequirement.Add(49, 9500000);
+            rankRequirement.Add(50, 12000000);
         }
 
         public static Registry RegFromString(string reg)

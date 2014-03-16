@@ -11,7 +11,7 @@ using Android.View;
 [assembly: Application("JGCompanion", Icon="drawable/Icon", Label="Jumpgate Companion")]
 [assembly: UsesPermission(Android.Manifest.Permission.INTERNET)]
 [assembly: UsesPermission(Android.Manifest.Permission.ACCESS_NETWORK_STATE)]
-[assembly: Package(VersionName="2.0.0", VersionCode=10)]
+[assembly: Package(VersionName="2.0.1", VersionCode=11)]
 
 namespace JGCompanion
 {

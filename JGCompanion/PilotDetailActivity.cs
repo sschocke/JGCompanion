@@ -64,8 +64,10 @@ namespace JGCompanion
             }
 
             var txtStatus = FindViewById<TextView>(R.Ids.txtPilotDetailOnlineStatus);
+            var txtLastOnline = FindViewById<TextView>(R.Ids.txtPilotDetailLastOnline);
             var txtRank = FindViewById<TextView>(R.Ids.txtPilotDetailRank);
             var txtSquad = FindViewById<TextView>(R.Ids.txtPilotDetailSquad);
+            var txtExpToNextLevel = FindViewById<TextView>(R.Ids.txtPilotDetailExpToNextLevel);
             var txtRegistry = FindViewById<TextView>(R.Ids.txtPilotDetailRegistry);
             //var imgRegistry = FindViewById<ImageView> (R.Ids.imgPilotDetailRegistry);
             var txtSolKills = FindViewById<TextView>(R.Ids.txtPilotDetailSolKills);
@@ -114,10 +116,14 @@ namespace JGCompanion
             {
                 txtStatus.Text = "offline";
             }
-            //txtStatus.Text = (pilotDetail.Online == true ? "ONLINE" : "offline");
+            if (pilotDetail.LastOnline.Year > 2000)
+            {
+                txtLastOnline.Text = pilotDetail.LastOnline.ToString("d MMM yyyy HH:mm");
+            }
             txtRank.Text = PilotDetail.RankMatrix(pilotDetail.Faction, pilotDetail.Rank);
             txtSquad.Text = pilotDetail.Squad;
             txtRegistry.Text = PilotDetail.RegString(pilotDetail.Registration);
+            txtExpToNextLevel.Text = "Next level experience: " + pilotDetail.ExperienceNextRank.ToString("N0");
             //imgRegistry.SetImageLevel ((int)pilotDetail.Registration);
             txtSolKills.Text = pilotDetail.KillsSol.ToString("N0");
             txtSolRating.SetText(PilotDetail.PolRating(pilotDetail.RatingSol));

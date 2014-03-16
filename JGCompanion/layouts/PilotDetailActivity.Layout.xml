@@ -20,7 +20,19 @@
 					android:padding="3dip"
 					android:background="@drawable/pilotdetailtextviewblack" />
 		</TableRow>
-		<TableRow>
+    <TableRow>
+      <TextView
+					android:text="Last Online"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewgray" />
+      <TextView
+					android:text="Unknown"
+					android:id="@+id/txtPilotDetailLastOnline"
+					android:gravity="center"
+					android:padding="3dip"
+					android:background="@drawable/pilotdetailtextviewblack" />
+    </TableRow>
+    <TableRow>
 			<TextView
 					android:text="Rank"
 					android:padding="3dip"
@@ -32,19 +44,19 @@
 					android:padding="3dip"
 					android:background="@drawable/pilotdetailtextviewblack" />
 		</TableRow>
-		<TableRow>
-			<TextView
+    <TableRow>
+      <TextView
 					android:text="Squad"
 					android:padding="3dip"
 					android:background="@drawable/pilotdetailtextviewgray" />
-			<TextView
+      <TextView
 					android:text="Squad"
 					android:id="@+id/txtPilotDetailSquad"
 					android:gravity="center"
 					android:padding="3dip"
 					android:background="@drawable/pilotdetailtextviewblack" />
-		</TableRow>
-		<TableRow>
+    </TableRow>
+    <TableRow>
 			<TextView
 					android:text="Registry"
 					android:padding="3dip"
@@ -72,7 +84,13 @@
 								android:background="@drawable/pilotdetailtextviewblack" />
 					</LinearLayout>-->
 		</TableRow>
-		<TextView
+    <TextView
+				android:text="Next level experience:"
+				android:id="@+id/txtPilotDetailExpToNextLevel"
+				android:gravity="center"
+				android:padding="3dip"
+				android:background="@drawable/pilotdetailtextviewblack" />
+    <TextView
 				android:text="Combat Categories"
 				android:padding="5dip"
 				android:background="@drawable/pilotdetailtextviewdarkgray"
