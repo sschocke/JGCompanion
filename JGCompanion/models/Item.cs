@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
+using Android.Content;
 
 namespace JGCompanion
 {
@@ -30,6 +31,31 @@ namespace JGCompanion
         public List<Component> Components { get; private set; }
         public List<ItemStationStock> StationStocks { get; private set; }
         public List<ItemProducer> Producers { get; private set; }
+
+        private static Dictionary<string, int> icons;
+
+        static Item()
+        {
+            icons = new Dictionary<string, int>();
+        }
+
+        public static int GetIconId(string name, Context context)
+        {
+            if (icons.ContainsKey(name) == true)
+            {
+                return icons[name];
+            }
+
+            int id = context.GetResources().GetIdentifier(name, "drawable", context.GetPackageName());
+            if (id == 0)
+            {
+                return 0;
+            }
+
+            icons.Add(name, id);
+
+            return id;
+        }
 
         public Item(XElement xml)
         {
@@ -140,6 +166,14 @@ namespace JGCompanion
             }
 
             return null;
+        }
+
+        public string ResourceName
+        {
+            get
+            {
+                return this.Name.ToLower().Replace(' ', '_');
+            }
         }
     }
 }

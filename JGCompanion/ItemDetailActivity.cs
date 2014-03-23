@@ -7,6 +7,7 @@ using Dot42.Manifest;
 using System.ComponentModel;
 using System.Net;
 using System.Xml.Linq;
+using Android.Graphics.Drawable;
 
 namespace JGCompanion
 {
@@ -73,6 +74,11 @@ namespace JGCompanion
 
         void PopulateItemDetail(Item itemDetail)
         {
+            int iconid = Item.GetIconId(itemDetail.ResourceName, this);
+            if (iconid > 0)
+            {
+                this.ActionBar.SetIcon(iconid);
+            }
             detailsFragment = new ItemDetailsTabFragment(itemDetail);
             detailsTab.SetTag(detailsFragment);
             var transaction = this.FragmentManager.BeginTransaction();
