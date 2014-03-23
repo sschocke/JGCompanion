@@ -51,6 +51,8 @@ namespace JGCompanion
         public PilotDetail(XElement xml)
             : base()
         {
+            Int64 lastOnline = 0;
+
             this.PilotID = Int64.Parse(xml.Element("id").Value);
             this.PilotName = xml.Element("callsign").Value;
             this.Faction = FromString(xml.Element("faction").Value);
@@ -82,9 +84,10 @@ namespace JGCompanion
             this.ShotsHit = Int32.Parse(xml.Element("shots_hit").Value);
             this.MissionsFlown = Int32.Parse(xml.Element("missions_flown").Value);
             this.MissionsCompleted = Int32.Parse(xml.Element("missions_completed").Value);
-            this.LastOnline = new DateTime(Int64.Parse(xml.Element("last_online").Value) * TimeSpan.TicksPerSecond);
-            this.LastOnline = this.LastOnline.AddYears(1969);
-            //DateTime temp = new DateTime(2014, 03, 14, 16, 30, 00, 0, DateTimeKind.Utc);
+            this.LastOnline = new DateTime(1970, 1, 1);
+            lastOnline = Int64.Parse(xml.Element("last_online").Value);
+            this.LastOnline = this.LastOnline.AddSeconds(lastOnline);
+            this.LastOnline = this.LastOnline.ToLocalTime();
         }
 
         public Int32 TotalPilotKills
