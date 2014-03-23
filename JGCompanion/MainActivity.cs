@@ -15,7 +15,7 @@ using Android.Content.Pm;
 [assembly: UsesPermission(Android.Manifest.Permission.INTERNET)]
 [assembly: UsesPermission(Android.Manifest.Permission.ACCESS_NETWORK_STATE)]
 [assembly: UsesPermission(Android.Manifest.Permission.WRITE_EXTERNAL_STORAGE)]
-[assembly: Package(VersionName = "2.1.0", VersionCode = 12)]
+[assembly: Package(VersionName = "2.1.1", VersionCode = 14)]
 
 namespace JGCompanion
 {

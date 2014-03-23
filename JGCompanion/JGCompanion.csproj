@@ -307,14 +307,14 @@
     <DrawableResource Include="gfx\commodity\titanium.png" />
     <DrawableResource Include="gfx\commodity\uranium.png" />
     <DrawableResource Include="gfx\commodity\vanadium.png" />
-    <DrawableResource Include="gfx\commodity\water-2.png" />
-    <DrawableResource Include="gfx\commodity\x-0013-s.png" />
-    <DrawableResource Include="gfx\commodity\x-1901-l.png" />
-    <DrawableResource Include="gfx\commodity\x-3555-l.png" />
-    <DrawableResource Include="gfx\commodity\x-4533-l.png" />
-    <DrawableResource Include="gfx\commodity\x-7770-l.png" />
-    <DrawableResource Include="gfx\commodity\x-8821-l.png" />
-    <DrawableResource Include="gfx\commodity\x-9450-c.png" />
+    <DrawableResource Include="gfx\commodity\water.png" />
+    <DrawableResource Include="gfx\commodity\x0013s.png" />
+    <DrawableResource Include="gfx\commodity\x1901l.png" />
+    <DrawableResource Include="gfx\commodity\x3555l.png" />
+    <DrawableResource Include="gfx\commodity\x4533l.png" />
+    <DrawableResource Include="gfx\commodity\x7770l.png" />
+    <DrawableResource Include="gfx\commodity\x8821l.png" />
+    <DrawableResource Include="gfx\commodity\x9450c.png" />
     <DrawableResource Include="gfx\commodity\xenon.png" />
     <DrawableResource Include="gfx\commodity\zinc.png" />
   </ItemGroup>
@@ -349,7 +349,7 @@
     <DrawableResource Include="gfx\gun\peeler.png" />
     <DrawableResource Include="gfx\gun\prospector.png" />
     <DrawableResource Include="gfx\gun\rasp.png" />
-    <DrawableResource Include="gfx\gun\s-w-28.png" />
+    <DrawableResource Include="gfx\gun\sw28.png" />
     <DrawableResource Include="gfx\gun\senator.png" />
     <DrawableResource Include="gfx\gun\serializer.png" />
     <DrawableResource Include="gfx\gun\shard.png" />
@@ -361,6 +361,190 @@
     <DrawableResource Include="gfx\gun\vantage.png" />
     <DrawableResource Include="gfx\gun\vapor.png" />
     <DrawableResource Include="gfx\gun\warper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\missile\calypso.png" />
+    <DrawableResource Include="gfx\missile\cutlass.png" />
+    <DrawableResource Include="gfx\missile\droptank.png" />
+    <DrawableResource Include="gfx\missile\glaive.png" />
+    <DrawableResource Include="gfx\missile\grave_robber.png" />
+    <DrawableResource Include="gfx\missile\hatchet.png" />
+    <DrawableResource Include="gfx\missile\hellrazor.png" />
+    <DrawableResource Include="gfx\missile\kataka.png" />
+    <DrawableResource Include="gfx\missile\lance.png" />
+    <DrawableResource Include="gfx\missile\long_sword.png" />
+    <DrawableResource Include="gfx\missile\maul.png" />
+    <DrawableResource Include="gfx\missile\morning_star.png" />
+    <DrawableResource Include="gfx\missile\purgatory.png" />
+    <DrawableResource Include="gfx\missile\rapier.png" />
+    <DrawableResource Include="gfx\missile\sabre.png" />
+    <DrawableResource Include="gfx\missile\screwdriver.png" />
+    <DrawableResource Include="gfx\missile\sirrus.png" />
+    <DrawableResource Include="gfx\missile\sledge.png" />
+    <DrawableResource Include="gfx\missile\smacker.png" />
+    <DrawableResource Include="gfx\missile\spear.png" />
+    <DrawableResource Include="gfx\missile\stiletto.png" />
+    <DrawableResource Include="gfx\missile\stinger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\capacitor\alembic.png" />
+    <DrawableResource Include="gfx\capacitor\carrier.png" />
+    <DrawableResource Include="gfx\capacitor\deepol.png" />
+    <DrawableResource Include="gfx\capacitor\germ.png" />
+    <DrawableResource Include="gfx\capacitor\jar.png" />
+    <DrawableResource Include="gfx\capacitor\jug.png" />
+    <DrawableResource Include="gfx\capacitor\keytso.png" />
+    <DrawableResource Include="gfx\capacitor\lifeline.png" />
+    <DrawableResource Include="gfx\capacitor\mana.png" />
+    <DrawableResource Include="gfx\capacitor\mantra.png" />
+    <DrawableResource Include="gfx\capacitor\outlet.png" />
+    <DrawableResource Include="gfx\capacitor\pint.png" />
+    <DrawableResource Include="gfx\capacitor\prayer.png" />
+    <DrawableResource Include="gfx\capacitor\sc15.png" />
+    <DrawableResource Include="gfx\capacitor\seed.png" />
+    <DrawableResource Include="gfx\capacitor\sponge.png" />
+    <DrawableResource Include="gfx\capacitor\spore.png" />
+    <DrawableResource Include="gfx\capacitor\summoner.png" />
+    <DrawableResource Include="gfx\capacitor\tank.png" />
+    <DrawableResource Include="gfx\capacitor\tric1.png" />
+    <DrawableResource Include="gfx\capacitor\utterance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\ecm\antiflux.png" />
+    <DrawableResource Include="gfx\ecm\ghost.png" />
+    <DrawableResource Include="gfx\ecm\jammer.png" />
+    <DrawableResource Include="gfx\ecm\pwd100.png" />
+    <DrawableResource Include="gfx\ecm\shade.png" />
+    <DrawableResource Include="gfx\ecm\specter.png" />
+    <DrawableResource Include="gfx\ecm\whistle.png" />
+    <DrawableResource Include="gfx\ecm\wraith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\engine\adventa.png" />
+    <DrawableResource Include="gfx\engine\burn.png" />
+    <DrawableResource Include="gfx\engine\burn_mkii.png" />
+    <DrawableResource Include="gfx\engine\cardoia.png" />
+    <DrawableResource Include="gfx\engine\caster.png" />
+    <DrawableResource Include="gfx\engine\dream.png" />
+    <DrawableResource Include="gfx\engine\guzzler.png" />
+    <DrawableResource Include="gfx\engine\impeler.png" />
+    <DrawableResource Include="gfx\engine\mitorias.png" />
+    <DrawableResource Include="gfx\engine\mitoria.png" />
+    <DrawableResource Include="gfx\engine\mitoria_plus.png" />
+    <DrawableResource Include="gfx\engine\money.png" />
+    <DrawableResource Include="gfx\engine\oteca.png" />
+    <DrawableResource Include="gfx\engine\propulser.png" />
+    <DrawableResource Include="gfx\engine\pusher.png" />
+    <DrawableResource Include="gfx\engine\respect.png" />
+    <DrawableResource Include="gfx\engine\rush.png" />
+    <DrawableResource Include="gfx\engine\se15.png" />
+    <DrawableResource Include="gfx\engine\shepherd.png" />
+    <DrawableResource Include="gfx\engine\tangent.png" />
+    <DrawableResource Include="gfx\engine\travant.png" />
+    <DrawableResource Include="gfx\engine\travant_plus.png" />
+    <DrawableResource Include="gfx\engine\vector.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <DrawableResource Include="gfx\modx\abattis.png" />
+    <DrawableResource Include="gfx\modx\ammunition_shop.png" />
+    <DrawableResource Include="gfx\modx\bcuoct.png" />
+    <DrawableResource Include="gfx\modx\bcuquan.png" />
+    <DrawableResource Include="gfx\modx\bcusol.png" />
+    <DrawableResource Include="gfx\modx\buildkit_2.png" />
+    <DrawableResource Include="gfx\modx\buildkit_4.png" />
+    <DrawableResource Include="gfx\modx\buildkit_8.png" />
+    <DrawableResource Include="gfx\modx\bullseye.png" />
+    <DrawableResource Include="gfx\modx\deepradar.png" />
+    <DrawableResource Include="gfx\modx\displacer.png" />
+    <DrawableResource Include="gfx\modx\docking_computer.png" />
+    <DrawableResource Include="gfx\modx\duelist.png" />
+    <DrawableResource Include="gfx\modx\flashfire.png" />
+    <DrawableResource Include="gfx\modx\fuelscoop.png" />
+    <DrawableResource Include="gfx\modx\hawkeye.png" />
+    <DrawableResource Include="gfx\modx\market_warehouse.png" />
+    <DrawableResource Include="gfx\modx\ml_amplifier.png" />
+    <DrawableResource Include="gfx\modx\nocknock.png" />
+    <DrawableResource Include="gfx\modx\optima.png" />
+    <DrawableResource Include="gfx\modx\oracle.png" />
+    <DrawableResource Include="gfx\modx\ore_silo.png" />
+    <DrawableResource Include="gfx\modx\refueling_tank.png" />
+    <DrawableResource Include="gfx\modx\repair_shop.png" />
+    <DrawableResource Include="gfx\modx\rotacol.png" />
+    <DrawableResource Include="gfx\modx\seabear_e.png" />
+    <DrawableResource Include="gfx\modx\ship_hangar.png" />
+    <DrawableResource Include="gfx\modx\storage_warehouse.png" />
+    <DrawableResource Include="gfx\modx\vtc_i.png" />
+    <DrawableResource Include="gfx\modx\witness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\powerplant\antagonizer.png" />
+    <DrawableResource Include="gfx\powerplant\centerfuge_mki.png" />
+    <DrawableResource Include="gfx\powerplant\centerfuge_mkii.png" />
+    <DrawableResource Include="gfx\powerplant\centerfuge_mkiii.png" />
+    <DrawableResource Include="gfx\powerplant\centerfuge_mkiv.png" />
+    <DrawableResource Include="gfx\powerplant\centerfuge_mkv.png" />
+    <DrawableResource Include="gfx\powerplant\collector.png" />
+    <DrawableResource Include="gfx\powerplant\contender.png" />
+    <DrawableResource Include="gfx\powerplant\contender_xl.png" />
+    <DrawableResource Include="gfx\powerplant\contender_xpr.png" />
+    <DrawableResource Include="gfx\powerplant\gatherer.png" />
+    <DrawableResource Include="gfx\powerplant\harvester.png" />
+    <DrawableResource Include="gfx\powerplant\instigator.png" />
+    <DrawableResource Include="gfx\powerplant\intimidator.png" />
+    <DrawableResource Include="gfx\powerplant\opal.png" />
+    <DrawableResource Include="gfx\powerplant\rake.png" />
+    <DrawableResource Include="gfx\powerplant\reaper.png" />
+    <DrawableResource Include="gfx\powerplant\sp16.png" />
+    <DrawableResource Include="gfx\powerplant\sport.png" />
+    <DrawableResource Include="gfx\powerplant\sport_lp.png" />
+    <DrawableResource Include="gfx\powerplant\sport_plus.png" />
+    <DrawableResource Include="gfx\powerplant\spud.png" />
+    <DrawableResource Include="gfx\powerplant\trip1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\radar\beholder.png" />
+    <DrawableResource Include="gfx\radar\chime.png" />
+    <DrawableResource Include="gfx\radar\clarifier.png" />
+    <DrawableResource Include="gfx\radar\creeper.png" />
+    <DrawableResource Include="gfx\radar\cyclops.png" />
+    <DrawableResource Include="gfx\radar\doorbell.png" />
+    <DrawableResource Include="gfx\radar\echo.png" />
+    <DrawableResource Include="gfx\radar\hall_monitor.png" />
+    <DrawableResource Include="gfx\radar\ivy.png" />
+    <DrawableResource Include="gfx\radar\knocker.png" />
+    <DrawableResource Include="gfx\radar\liana.png" />
+    <DrawableResource Include="gfx\radar\night_watchman.png" />
+    <DrawableResource Include="gfx\radar\nubbler.png" />
+    <DrawableResource Include="gfx\radar\outlook.png" />
+    <DrawableResource Include="gfx\radar\root.png" />
+    <DrawableResource Include="gfx\radar\sr9.png" />
+    <DrawableResource Include="gfx\radar\sentinel.png" />
+    <DrawableResource Include="gfx\radar\sentry.png" />
+    <DrawableResource Include="gfx\radar\vine.png" />
+    <DrawableResource Include="gfx\radar\wayfinder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\shield\alpaa.png" />
+    <DrawableResource Include="gfx\shield\canopy.png" />
+    <DrawableResource Include="gfx\shield\cascade.png" />
+    <DrawableResource Include="gfx\shield\defier.png" />
+    <DrawableResource Include="gfx\shield\deflector.png" />
+    <DrawableResource Include="gfx\shield\flatiron.png" />
+    <DrawableResource Include="gfx\shield\guardian.png" />
+    <DrawableResource Include="gfx\shield\haven.png" />
+    <DrawableResource Include="gfx\shield\himelea.png" />
+    <DrawableResource Include="gfx\shield\kydango.png" />
+    <DrawableResource Include="gfx\shield\makk.png" />
+    <DrawableResource Include="gfx\shield\mortar.png" />
+    <DrawableResource Include="gfx\shield\omnus.png" />
+    <DrawableResource Include="gfx\shield\pod.png" />
+    <DrawableResource Include="gfx\shield\resistor.png" />
+    <DrawableResource Include="gfx\shield\rocky.png" />
+    <DrawableResource Include="gfx\shield\ss13.png" />
+    <DrawableResource Include="gfx\shield\shelter.png" />
+    <DrawableResource Include="gfx\shield\shroud.png" />
+    <DrawableResource Include="gfx\shield\warden.png" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

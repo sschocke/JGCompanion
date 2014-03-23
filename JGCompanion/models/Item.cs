@@ -172,7 +172,7 @@ namespace JGCompanion
         {
             get
             {
-                return this.Name.ToLower().Replace(' ', '_').Replace(".", "");
+                return this.Name.ToLower().Replace(' ', '_').Replace(".", "").Replace("-", "");
             }
         }
     }
