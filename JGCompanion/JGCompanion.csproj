@@ -318,6 +318,50 @@
     <DrawableResource Include="gfx\commodity\xenon.png" />
     <DrawableResource Include="gfx\commodity\zinc.png" />
   </ItemGroup>
+  <ItemGroup>
+    <DrawableResource Include="gfx\gun\banker.png" />
+    <DrawableResource Include="gfx\gun\barrak.png" />
+    <DrawableResource Include="gfx\gun\bender.png" />
+    <DrawableResource Include="gfx\gun\broker.png" />
+    <DrawableResource Include="gfx\gun\calefactor.png" />
+    <DrawableResource Include="gfx\gun\cobra.png" />
+    <DrawableResource Include="gfx\gun\cracker.png" />
+    <DrawableResource Include="gfx\gun\dealer.png" />
+    <DrawableResource Include="gfx\gun\deceptor.png" />
+    <DrawableResource Include="gfx\gun\distorter.png" />
+    <DrawableResource Include="gfx\gun\duster.png" />
+    <DrawableResource Include="gfx\gun\excavator.png" />
+    <DrawableResource Include="gfx\gun\featherfire.png" />
+    <DrawableResource Include="gfx\gun\financier.png" />
+    <DrawableResource Include="gfx\gun\financier_mkii.png" />
+    <DrawableResource Include="gfx\gun\flail.png" />
+    <DrawableResource Include="gfx\gun\hammer.png" />
+    <DrawableResource Include="gfx\gun\hitman.png" />
+    <DrawableResource Include="gfx\gun\illuminator.png" />
+    <DrawableResource Include="gfx\gun\injustice.png" />
+    <DrawableResource Include="gfx\gun\insight.png" />
+    <DrawableResource Include="gfx\gun\landlord.png" />
+    <DrawableResource Include="gfx\gun\lastlight.png" />
+    <DrawableResource Include="gfx\gun\liar.png" />
+    <DrawableResource Include="gfx\gun\lightfire.png" />
+    <DrawableResource Include="gfx\gun\needle.png" />
+    <DrawableResource Include="gfx\gun\nova_mki.png" />
+    <DrawableResource Include="gfx\gun\peeler.png" />
+    <DrawableResource Include="gfx\gun\prospector.png" />
+    <DrawableResource Include="gfx\gun\rasp.png" />
+    <DrawableResource Include="gfx\gun\s-w-28.png" />
+    <DrawableResource Include="gfx\gun\senator.png" />
+    <DrawableResource Include="gfx\gun\serializer.png" />
+    <DrawableResource Include="gfx\gun\shard.png" />
+    <DrawableResource Include="gfx\gun\shark.png" />
+    <DrawableResource Include="gfx\gun\spitfire.png" />
+    <DrawableResource Include="gfx\gun\straker.png" />
+    <DrawableResource Include="gfx\gun\thief.png" />
+    <DrawableResource Include="gfx\gun\thorn.png" />
+    <DrawableResource Include="gfx\gun\vantage.png" />
+    <DrawableResource Include="gfx\gun\vapor.png" />
+    <DrawableResource Include="gfx\gun\warper.png" />
+  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

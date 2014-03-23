@@ -25,173 +25,257 @@ namespace JGCompanion
             
             public const int background = 0x7f020005;
             
-            public const int barium = 0x7f020006;
+            public const int banker = 0x7f020006;
             
-            public const int boron = 0x7f020007;
+            public const int barium = 0x7f020007;
             
-            public const int carbon = 0x7f020008;
+            public const int barrak = 0x7f020008;
             
-            public const int cesium = 0x7f020009;
+            public const int bender = 0x7f020009;
             
-            public const int chemicals = 0x7f02000a;
+            public const int boron = 0x7f02000a;
             
-            public const int chromium = 0x7f02000b;
+            public const int broker = 0x7f02000b;
             
-            public const int cobalt = 0x7f02000c;
+            public const int calefactor = 0x7f02000c;
             
-            public const int common_metals = 0x7f02000d;
+            public const int carbon = 0x7f02000d;
             
-            public const int composites = 0x7f02000e;
+            public const int cesium = 0x7f02000e;
             
-            public const int conflux_biomass = 0x7f02000f;
+            public const int chemicals = 0x7f02000f;
             
-            public const int construction_materials = 0x7f020010;
+            public const int chromium = 0x7f020010;
             
-            public const int copper = 0x7f020011;
+            public const int cobalt = 0x7f020011;
             
-            public const int cpus = 0x7f020012;
+            public const int cobra = 0x7f020012;
             
-            public const int electronics = 0x7f020013;
+            public const int common_metals = 0x7f020013;
             
-            public const int erbium = 0x7f020014;
+            public const int composites = 0x7f020014;
             
-            public const int explosives = 0x7f020015;
+            public const int conflux_biomass = 0x7f020015;
             
-            public const int faction_icon = 0x7f020016;
+            public const int construction_materials = 0x7f020016;
             
-            public const int fiber_optics = 0x7f020017;
+            public const int copper = 0x7f020017;
             
-            public const int fuel_cells = 0x7f020018;
+            public const int cpus = 0x7f020018;
             
-            public const int gallium = 0x7f020019;
+            public const int cracker = 0x7f020019;
             
-            public const int gemwoods = 0x7f02001a;
+            public const int dealer = 0x7f02001a;
             
-            public const int germanium = 0x7f02001b;
+            public const int deceptor = 0x7f02001b;
             
-            public const int gold = 0x7f02001c;
+            public const int distorter = 0x7f02001c;
             
-            public const int grain = 0x7f02001d;
+            public const int duster = 0x7f02001d;
             
-            public const int gravitational_components = 0x7f02001e;
+            public const int electronics = 0x7f02001e;
             
-            public const int helium = 0x7f02001f;
+            public const int erbium = 0x7f02001f;
             
-            public const int hyperial = 0x7f020020;
+            public const int excavator = 0x7f020020;
             
-            public const int ice = 0x7f020021;
+            public const int explosives = 0x7f020021;
             
-            public const int Icon = 0x7f020022;
+            public const int faction_icon = 0x7f020022;
             
-            public const int indium = 0x7f020023;
+            public const int featherfire = 0x7f020023;
             
-            public const int iridium = 0x7f020024;
+            public const int fiber_optics = 0x7f020024;
             
-            public const int iron = 0x7f020025;
+            public const int financier = 0x7f020025;
             
-            public const int jossh_background = 0x7f020026;
+            public const int financier_mkii = 0x7f020026;
             
-            public const int laser_components = 0x7f020027;
+            public const int flail = 0x7f020027;
             
-            public const int lithium = 0x7f020028;
+            public const int fuel_cells = 0x7f020028;
             
-            public const int machined_parts = 0x7f020029;
+            public const int gallium = 0x7f020029;
             
-            public const int magnesium = 0x7f02002a;
+            public const int gemwoods = 0x7f02002a;
             
-            public const int magnetics = 0x7f02002b;
+            public const int germanium = 0x7f02002b;
             
-            public const int manufactured_foods = 0x7f02002c;
+            public const int gold = 0x7f02002c;
             
-            public const int medical_supplies = 0x7f02002d;
+            public const int grain = 0x7f02002d;
             
-            public const int molybdenum = 0x7f02002e;
+            public const int gravitational_components = 0x7f02002e;
             
-            public const int natural_products = 0x7f02002f;
+            public const int hammer = 0x7f02002f;
             
-            public const int nitrogen = 0x7f020030;
+            public const int helium = 0x7f020030;
             
-            public const int octavia_light = 0x7f020031;
+            public const int hitman = 0x7f020031;
             
-            public const int octavius = 0x7f020032;
+            public const int hyperial = 0x7f020032;
             
-            public const int OctaviusIcon = 0x7f020033;
+            public const int ice = 0x7f020033;
             
-            public const int optics = 0x7f020034;
+            public const int Icon = 0x7f020034;
             
-            public const int organic_foods = 0x7f020035;
+            public const int illuminator = 0x7f020035;
             
-            public const int palladium = 0x7f020036;
+            public const int indium = 0x7f020036;
             
-            public const int phosphorous = 0x7f020037;
+            public const int injustice = 0x7f020037;
             
-            public const int PilotDetailTextViewBlack = 0x7f020038;
+            public const int insight = 0x7f020038;
             
-            public const int PilotDetailTextViewDarkGray = 0x7f020039;
+            public const int iridium = 0x7f020039;
             
-            public const int PilotDetailTextViewGray = 0x7f02003a;
+            public const int iron = 0x7f02003a;
             
-            public const int PilotDetailTextViewInFlight = 0x7f02003b;
+            public const int jossh_background = 0x7f02003b;
             
-            public const int PilotDetailTextViewOnline = 0x7f02003c;
+            public const int landlord = 0x7f02003c;
             
-            public const int platinum = 0x7f02003d;
+            public const int laser_components = 0x7f02003d;
             
-            public const int plutonium = 0x7f02003e;
+            public const int lastlight = 0x7f02003e;
             
-            public const int power_converters = 0x7f02003f;
+            public const int liar = 0x7f02003f;
             
-            public const int precious_metals = 0x7f020040;
+            public const int lightfire = 0x7f020040;
             
-            public const int prosthetics = 0x7f020041;
+            public const int lithium = 0x7f020041;
             
-            public const int proximity_fuses = 0x7f020042;
+            public const int machined_parts = 0x7f020042;
             
-            public const int quantar = 0x7f020043;
+            public const int magnesium = 0x7f020043;
             
-            public const int QuantarIcon = 0x7f020044;
+            public const int magnetics = 0x7f020044;
             
-            public const int quanus_ice = 0x7f020045;
+            public const int manufactured_foods = 0x7f020045;
             
-            public const int radioactive_metals = 0x7f020046;
+            public const int medical_supplies = 0x7f020046;
             
-            public const int radium = 0x7f020047;
+            public const int molybdenum = 0x7f020047;
             
-            public const int ram = 0x7f020048;
+            public const int natural_products = 0x7f020048;
             
-            public const int rf_transceivers = 0x7f020049;
+            public const int needle = 0x7f020049;
             
-            public const int semifluxors = 0x7f02004a;
+            public const int nitrogen = 0x7f02004a;
             
-            public const int silicon = 0x7f02004b;
+            public const int nova_mki = 0x7f02004b;
             
-            public const int silver = 0x7f02004c;
+            public const int octavia_light = 0x7f02004c;
             
-            public const int solrain = 0x7f02004d;
+            public const int octavius = 0x7f02004d;
             
-            public const int solrain_stout = 0x7f02004e;
+            public const int OctaviusIcon = 0x7f02004e;
             
-            public const int SolrainIcon = 0x7f02004f;
+            public const int optics = 0x7f02004f;
             
-            public const int synthetics = 0x7f020050;
+            public const int organic_foods = 0x7f020050;
             
-            public const int textiles = 0x7f020051;
+            public const int palladium = 0x7f020051;
             
-            public const int titanium = 0x7f020052;
+            public const int peeler = 0x7f020052;
             
-            public const int tri = 0x7f020053;
+            public const int phosphorous = 0x7f020053;
             
-            public const int uranium = 0x7f020054;
+            public const int PilotDetailTextViewBlack = 0x7f020054;
             
-            public const int vanadium = 0x7f020055;
+            public const int PilotDetailTextViewDarkGray = 0x7f020055;
             
-            public const int water = 0x7f020056;
+            public const int PilotDetailTextViewGray = 0x7f020056;
             
-            public const int x = 0x7f020057;
+            public const int PilotDetailTextViewInFlight = 0x7f020057;
             
-            public const int xenon = 0x7f020058;
+            public const int PilotDetailTextViewOnline = 0x7f020058;
             
-            public const int zinc = 0x7f020059;
+            public const int platinum = 0x7f020059;
+            
+            public const int plutonium = 0x7f02005a;
+            
+            public const int power_converters = 0x7f02005b;
+            
+            public const int precious_metals = 0x7f02005c;
+            
+            public const int prospector = 0x7f02005d;
+            
+            public const int prosthetics = 0x7f02005e;
+            
+            public const int proximity_fuses = 0x7f02005f;
+            
+            public const int quantar = 0x7f020060;
+            
+            public const int QuantarIcon = 0x7f020061;
+            
+            public const int quanus_ice = 0x7f020062;
+            
+            public const int radioactive_metals = 0x7f020063;
+            
+            public const int radium = 0x7f020064;
+            
+            public const int ram = 0x7f020065;
+            
+            public const int rasp = 0x7f020066;
+            
+            public const int rf_transceivers = 0x7f020067;
+            
+            public const int s = 0x7f020068;
+            
+            public const int semifluxors = 0x7f020069;
+            
+            public const int senator = 0x7f02006a;
+            
+            public const int serializer = 0x7f02006b;
+            
+            public const int shard = 0x7f02006c;
+            
+            public const int shark = 0x7f02006d;
+            
+            public const int silicon = 0x7f02006e;
+            
+            public const int silver = 0x7f02006f;
+            
+            public const int solrain = 0x7f020070;
+            
+            public const int solrain_stout = 0x7f020071;
+            
+            public const int SolrainIcon = 0x7f020072;
+            
+            public const int spitfire = 0x7f020073;
+            
+            public const int straker = 0x7f020074;
+            
+            public const int synthetics = 0x7f020075;
+            
+            public const int textiles = 0x7f020076;
+            
+            public const int thief = 0x7f020077;
+            
+            public const int thorn = 0x7f020078;
+            
+            public const int titanium = 0x7f020079;
+            
+            public const int tri = 0x7f02007a;
+            
+            public const int uranium = 0x7f02007b;
+            
+            public const int vanadium = 0x7f02007c;
+            
+            public const int vantage = 0x7f02007d;
+            
+            public const int vapor = 0x7f02007e;
+            
+            public const int warper = 0x7f02007f;
+            
+            public const int water = 0x7f020080;
+            
+            public const int x = 0x7f020081;
+            
+            public const int xenon = 0x7f020082;
+            
+            public const int zinc = 0x7f020083;
         }
         
         public sealed class Layouts
